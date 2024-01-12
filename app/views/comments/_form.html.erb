@@ -1,5 +1,5 @@
 <div class="comment-form">
-  <%= form_with(model: [blog, comment]) do |form| %>
+  <%= form_with(model: [blog, comment], local: false) do |form| %>
     <div class="field">
       <%= form.label :description, "コメント内容" %>
       <%= form.text_area :description %>
